@@ -39,12 +39,12 @@ class InitialPageState extends State<InitialPage> {
                       ),
                       Column(
                         children: [
-                          SizedBox(height: 30,),
+                          const SizedBox(height: 30),
                           GradientButtonFb1(
-                              onPressed: () {
-                                Modular.to.pushNamed('/home/');
-                              }, 
-                              text: "Entre Agora!"),
+                              onPressed: () {Modular.to.pushNamed('/home/');}, 
+                              text: "Entre Agora!"
+                            ),
+
                           OutlineButtonFb1(
                               onPressed: () {
                                 Modular.to.pushNamed('/auth/');
